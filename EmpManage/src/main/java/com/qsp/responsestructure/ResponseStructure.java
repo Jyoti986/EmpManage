@@ -1,4 +1,4 @@
-package com.qsp.entity;
+package com.qsp.responsestructure;
 
 public class ResponseStructure<T> {
 	

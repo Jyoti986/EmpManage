@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.qsp.dao.EmployeeDAO;
 import com.qsp.entity.Employee;
-import com.qsp.entity.ResponseStructure;
+import com.qsp.responsestructure.ResponseStructure;
 @Service
 public class EmployeeService {
 	@Autowired

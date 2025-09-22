@@ -6,19 +6,18 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.qsp.entity.Employee;
+import com.qsp.entity.Department;
 import com.qsp.responsestructure.ResponseStructure;
-import com.qsp.service.EmployeeService;
+import com.qsp.service.DepartmentService;
 
 @RestController
-public class EmployeeController {
-	
+public class DepartmentController {
 	@Autowired
-	private EmployeeService employeeService;
+	private DepartmentService departmentService;
 	
-	@PostMapping(value = "/saveEmployee")
-	public ResponseEntity<ResponseStructure<Employee>> saveEmployee(@RequestBody Employee employee){
-		return employeeService.saveEmployee(employee);
+	@PostMapping(value = "/saveDepartment")
+	public ResponseEntity<ResponseStructure<Department>> saveDepartment(@RequestBody Department department){
+		return departmentService.saveDepartment(department);
 		
 	}
 }
